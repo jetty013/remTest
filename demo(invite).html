@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 使用rem布局meta标签写法 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable"> 
+	<meta content="yes" name="apple-touch-fullscreen"> 
+	<meta content="telephone=no,email=no" name="format-detection">
+	<!-- <meta name="flexible" content="initial-dpr=2"/> -->
+	<script src="swiper-3.4.2.min.js"></script>
+	<script src="build/flexible_css.debug.js"></script> 
+	<script src="build/flexible.debug.js"></script>
+	<link rel="stylesheet" href="swiper-3.4.2.min.css">
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<title>邀请好友rem布局设计</title>
+	<style>
+		/*清除浮动*/
+		.clearFix{
+			zoom: 1;
+		}
+		.clearFix:after{
+			visibility: hidden;
+			overflow: hidden;
+			display: block;
+			content: "";
+			clear: both;
+		}
+		/*清除浮动*/
+		.invite-title{
+			width: 10.0rem;
+			height: 1.4rem;
+			background-color:#fff;
+			line-height: 1.4rem;
+			text-align: center;
+			position: fixed;
+			top:0;
+		}
+		.invite-title .title1{
+			position: absolute;
+			left:0.666667rem;
+			top:0.4rem;
+			width: 0.6rem;
+			height: 0.6rem;
+			background-color: pink;
+		}
+		.invite-title .title2{
+			width: 100%;
+			text-align: center;
+			height: 1.4rem;
+			line-height: 1.4rem;		
+		}
+		.invite-title .title1 img{
+			width: 0.6rem;
+			height: 0.6rem;
+			background-color: pink;
+		}
+		.invite-banner{
+			width: 10.0rem;
+			height: 10.293333rem;
+			background-color: #bfe2fd;
+			position: relative;
+		}
+		.invite-slide{
+			width: 7.466667rem;
+			height: 10.293333rem;
+		}
+		.invite-slide img{
+			width: 7.466667rem;
+			height: 10.293333rem;
+		}
+		.invite-info1{
+			width: 10.0rem;
+			height: 1.8rem;
+			line-height: 1.8rem;
+			text-align: center;
+			border-bottom: 1px  solid #ededee;
+			font-size: 0.453333rem;
+		}
+		.invite-info2{
+			position: relative;
+			padding:0.666667rem 0.6rem 0.533333rem 0.6rem;
+			background-color: #fff;
+			width: 8.8rem;
+			margin: 0 auto;
+			font-size:0.373333rem;
+			/*margin-bottom: 0.533333rem;*/
+		}
+		.invite-info3{
+			width: 8.8rem;
+			margin:0 auto;
+			text-align: center;
+			height: 1.333333rem;
+			line-height: 1.333333rem;
+			color:#fff;
+			margin-bottom: 0.733333rem;
+		}
+		.invite-info3 input{
+			width: 8.8rem;
+			margin:0 auto;
+			text-align: center;
+			height: 1.333333rem;
+			line-height: 1.333333rem;
+			border:none;
+			background-color:#94c1e7;
+			color:#fff; 
+		}
+		.invite-down{
+			position: relative;
+			padding: 0.866667rem 0.6rem 1.733333rem 0.6rem;
+			font-size: 0.32rem;
+			color:#b4b5c0;
+		}
+	</style>
+</head>
+<body>
+	<!-- 邀请好友最外层 -->
+	<div class="invite-wrapper">
+		<div class="invite">
+		<!-- up -->
+			<div class="invite-up">
+				<div class="invite-title">
+					<div class="title1">
+						<a href="javascript:void(0);"><img src="" alt=""></a>
+					</div>
+					<div class="title2">邀请好友</div>
+				</div>
+				<div style="height: 1.4rem;"></div>
+				<div class="invite-banner">
+				<!-- swiper -->
+					<div class="swiper-container invite-container">
+					  <div class="swiper-wrapper invite-wrapper">
+
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/001.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/002.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/003.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/004.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/005.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/006.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/007.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide  invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/008.png" alt="">
+					    	</a>
+					    </div>
+					    <div class="swiper-slide invite-slide">
+					    	<a href="javascript:void(0);">
+					    		<img src="images/009.png" alt="">
+					    	</a>
+					    </div>
+					    
+					  </div>
+					</div>
+				<!--swiper-->
+				</div>
+				<!-- info -->
+				<div class="invite-info">
+					<div class="invite-info1">邀请好友，各得<span style="color:#94c1e7;">50元</span>红包</div>
+					<div class="invite-info2 clearFix">
+						<div class="zhuanshu" style="float: left;">
+							你的专属推荐码
+						</div>
+						<div class="zimu" style="float: right;">
+							SKCSANKCSAJCSAKCNDSA
+						</div>
+					</div>
+					<div class="invite-info3">
+						<input type="text" value="发送邀请链接给好姐妹">
+					</div>
+				</div>
+				<div style="height: 0.133333rem;background-color: #f5f8fa;"></div>
+				<!-- info -->
+			</div>
+		<!-- up -->
+		<!-- down -->
+			<div class="invite-down">
+				<div style="font-size: 0.373333rem;font-weight: bold;color:#3b4058;margin-bottom: 0.733333rem;">活动规则</div>
+				<div>1.用户注册后登录状态即可发送邀请链接，参与活动；</div>
+				<div>2.单个账户拥有唯一邀请链接，发送次数不限，邀请越多，红包越多；</div>
+				<div>3.用户点击邀请里链接后注册即视为绑定邀请与被邀请关系；</div>
+				<div>4.被邀请者只能绑定一个邀请者，已注册用户无法成为被邀请者；</div>
+				<div>5.如若被邀请者使用部分特殊优惠券（如特殊的商家合作券），邀请者无法获得红包。</div>
+				<div>6.被邀请者的第一次非体验会员订单开始时间约三个工作日内，邀请者能取现，现金通过微信公众号发放红包，领取时请关注梵星学微信微信公众号；</div>
+				<div>7.取现金额可无限累计，取现额度与次数限制须遵守微信红包规定；</div>
+				<div>8.本活动机最终解释权归梵星学所有。</div>
+			</div>
+		<!-- down -->
+		</div>
+	</div>
+	<!-- 邀请好友最外层 -->
+	<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		slidesPerView: 'auto',
+		centeredSlides:'true',
+		spaceBetween:20,
+
+	});
+	</script>
+</body>
+</html>
