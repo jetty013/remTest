@@ -7,14 +7,15 @@
 	<meta content="yes" name="apple-mobile-web-app-capable"> 
 	<meta content="yes" name="apple-touch-fullscreen"> 
 	<meta content="telephone=no,email=no" name="format-detection">
-	<!-- <meta name="flexible" content="initial-dpr=2"/> -->
 	<script src="swiper-3.4.2.min.js"></script>
-	<script src="build/flexible_css.debug.js"></script> 
-	<script src="build/flexible.debug.js"></script>
 	<link rel="stylesheet" href="swiper-3.4.2.min.css">
 	<!-- <link rel="stylesheet" href="style.css"> -->
 	<title>邀请好友rem布局设计</title>
 	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
 		/*清除浮动*/
 		.clearFix{
 			zoom: 1;
@@ -28,87 +29,87 @@
 		}
 		/*清除浮动*/
 		.invite-title{
-			width: 10.0rem;
-			height: 1.4rem;
+			width: 100vw;
+			height: 7.87vh;
 			background-color:#fff;
-			line-height: 1.4rem;
+			line-height: 7.87vh;
 			text-align: center;
 			position: fixed;
 			top:0;
 		}
 		.invite-title .title1{
 			position: absolute;
-			left:0.666667rem;
-			top:0.4rem;
-			width: 0.6rem;
-			height: 0.6rem;
+			left:6.67vw;
+			top:2.25vh;
+			width: 6vw;
+			height: 3.73vh;
 			background-color: pink;
 		}
 		.invite-title .title2{
 			width: 100%;
 			text-align: center;
-			height: 1.4rem;
-			line-height: 1.4rem;		
+			height: 7.87vh;
+			line-height: 7.87vh;		
 		}
 		.invite-title .title1 img{
-			width: 0.6rem;
-			height: 0.6rem;
+			width: 6vw;
+			height: 3.73vh;
 			background-color: pink;
 		}
 		.invite-banner{
-			width: 10.0rem;
-			height: 10.293333rem;
+			width: 100vw;
+			height: 57.87vh;
 			background-color: #bfe2fd;
 			position: relative;
 		}
 		.invite-slide{
-			width: 7.466667rem;
-			height: 10.293333rem;
+			width: 74.67vw;
+			height: 57.87vh;
 		}
 		.invite-slide img{
-			width: 7.466667rem;
-			height: 10.293333rem;
+			width: 74.67vw;
+			/*height: 57.87vh;*/
 		}
 		.invite-info1{
-			width: 10.0rem;
-			height: 1.8rem;
-			line-height: 1.8rem;
+			width: 100vw;
+			height: 10.12vh;
+			line-height: 10.12vh;
 			text-align: center;
 			border-bottom: 1px  solid #ededee;
-			font-size: 0.453333rem;
+			font-size: 4.53vw;
 		}
 		.invite-info2{
 			position: relative;
-			padding:0.666667rem 0.6rem 0.533333rem 0.6rem;
+			padding:4.12vh 6vw 3vh 6vw;
 			background-color: #fff;
-			width: 8.8rem;
+			width: 88vw;
 			margin: 0 auto;
-			font-size:0.373333rem;
+			font-size:3.73vw;
 			/*margin-bottom: 0.533333rem;*/
 		}
 		.invite-info3{
-			width: 8.8rem;
+			width: 88vw;
 			margin:0 auto;
 			text-align: center;
-			height: 1.333333rem;
-			line-height: 1.333333rem;
+			height: 7.45vh;
+			line-height: 7.45vh;
 			color:#fff;
-			margin-bottom: 0.733333rem;
+			margin-bottom: 4.12vh;
 		}
 		.invite-info3 input{
-			width: 8.8rem;
+			width: 88vw;
 			margin:0 auto;
 			text-align: center;
-			height: 1.333333rem;
-			line-height: 1.333333rem;
+			height: 7.45vh;
+			line-height: 7.45vh;
 			border:none;
 			background-color:#94c1e7;
 			color:#fff; 
 		}
 		.invite-down{
 			position: relative;
-			padding: 0.866667rem 0.6rem 1.733333rem 0.6rem;
-			font-size: 0.32rem;
+			padding: 4.87vh 6vw 9.75vh 6vw;
+			font-size: 3.2vw;
 			color:#b4b5c0;
 		}
 	</style>
@@ -125,7 +126,7 @@
 					</div>
 					<div class="title2">邀请好友</div>
 				</div>
-				<div style="height: 1.4rem;"></div>
+				<div style="height: 7.87vh;"></div>
 				<div class="invite-banner">
 				<!-- swiper -->
 					<div class="swiper-container invite-container">
@@ -196,13 +197,13 @@
 						<input type="text" value="发送邀请链接给好姐妹">
 					</div>
 				</div>
-				<div style="height: 0.133333rem;background-color: #f5f8fa;"></div>
+				<div style="height:0.75vh;background-color: #f5f8fa;"></div>
 				<!-- info -->
 			</div>
 		<!-- up -->
 		<!-- down -->
 			<div class="invite-down">
-				<div style="font-size: 0.373333rem;font-weight: bold;color:#3b4058;margin-bottom: 0.733333rem;">活动规则</div>
+				<div style="font-size: 3.73vw;font-weight: bold;color:#3b4058;margin-bottom: 4.12vh;">活动规则</div>
 				<div>1.用户注册后登录状态即可发送邀请链接，参与活动；</div>
 				<div>2.单个账户拥有唯一邀请链接，发送次数不限，邀请越多，红包越多；</div>
 				<div>3.用户点击邀请里链接后注册即视为绑定邀请与被邀请关系；</div>
@@ -224,19 +225,6 @@
 		spaceBetween:20,
 
 	});
-	
-	// invite-info3
-	function testjson(){
-		var testJson=[{
-			'name':'susan',
-			'age':18,
-			'address':'上海市宝山区长逸路15号复旦软件园A幢'
-		}];
-		$('.invite-info3').click(function(){
-			$(this).text()=testJson[name];
-		})
-	}
-	testjson();
 	</script>
 </body>
 </html>
